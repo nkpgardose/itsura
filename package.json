@@ -1,8 +1,7 @@
 {
   "author": "Neil Gardose",
-  "description": "Emoji picker made in React",
+  "description": "Set of react components",
   "homepage": "http://neil.onl/itsura",
-  "name": "itsura",
   "keywords": [
     "components",
     "react components",
@@ -10,12 +9,13 @@
     "styled"
   ],
   "license": "MIT",
-  "version": "0.1.0",
+  "name": "itsura",
   "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/nkpgardose/itsura"
   },
+  "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -35,45 +35,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "plugin:jsx-a11y/recommended",
-      "plugin:react/recommended"
-    ],
-    "plugins": [
-      "react",
-      "jsx-a11y"
-    ],
-    "rules": {
-      "semi": [
-        "error",
-        "never"
-      ],
-      "max-len": [
-        "error",
-        {
-          "code": 80,
-          "comments": 65
-        }
-      ],
-      "react/require-default-props": [
-        2,
-        {
-          "forbidDefaultForRequired": true
-        }
-      ],
-      "react/prefer-stateless-function": [
-        2
-      ],
-      "react/boolean-prop-naming": [
-        "error",
-        {
-          "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
-        }
-      ]
-    }
   },
   "browserslist": {
     "production": [

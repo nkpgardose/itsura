@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["react", "jsx-a11y"],
+  "rules": {
+    "semi": ["error", "never"],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "comments": 65
+      }
+    ],
+    "react/require-default-props": [
+      2,
+      {
+        "forbidDefaultForRequired": true
+      }
+    ],
+    "react/prefer-stateless-function": [2],
+    "react/boolean-prop-naming": [
+      "error",
+      {
+        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
+      }
+    ]
+  }
+}
