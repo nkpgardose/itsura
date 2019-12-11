@@ -1,7 +1,21 @@
 {
+  "author": "Neil Gardose",
+  "description": "Emoji picker made in React",
+  "homepage": "http://neil.onl/itsura",
   "name": "itsura",
+  "keywords": [
+    "components",
+    "react components",
+    "UI library",
+    "styled"
+  ],
+  "license": "MIT",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkpgardose/itsura"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,10 +33,47 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "jsx-a11y"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 80,
+          "comments": 65
+        }
+      ],
+      "react/require-default-props": [
+        2,
+        {
+          "forbidDefaultForRequired": true
+        }
+      ],
+      "react/prefer-stateless-function": [
+        2
+      ],
+      "react/boolean-prop-naming": [
+        "error",
+        {
+          "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -35,5 +86,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0"
   }
 }
