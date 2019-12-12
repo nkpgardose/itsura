@@ -12,7 +12,9 @@ describe('Btn', () => {
 	}
 
 	it('renders without crashing', () => {
-		render(<Btn {...defaultProps}>Press me!</Btn>).getByText('Press me!')
+		const wrapper = render(<Btn {...defaultProps}>Press me!</Btn>)
+		expect(wrapper.getByText('Press me!')).toBeInTheDocument()
+		fireEvent.click(wrapper.getByText('Press me!'))
 	})
 
 	it('renders with sizes value on className', () => {

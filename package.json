@@ -61,5 +61,13 @@
     "react-docgen-typescript": "^1.16.1",
     "react-styleguidist": "^10.3.2",
     "sinon": "^7.5.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!/node_modules/",
+      "!src/index.tsx",
+      "!src/serviceWorker.ts"
+    ]
   }
 }
