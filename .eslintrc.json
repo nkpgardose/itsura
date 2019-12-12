@@ -6,12 +6,13 @@
   ],
   "plugins": ["react", "jsx-a11y"],
   "rules": {
+    "quotes": [2, "single", "avoid-escape"],
     "semi": ["error", "never"],
     "max-len": [
       "error",
       {
         "code": 80,
-        "comments": 65
+        "comments": 80
       }
     ],
     "react/require-default-props": [
