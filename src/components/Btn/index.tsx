@@ -13,7 +13,7 @@ interface Props {
   /**
    * By default is medium. Blank size is a medium size.
    */
-	size?: '' | 'xsm' | 'sm' | 'lg' | 'xlg',
+	size?: '' | 'xsm' | 'sm' | 'lg' | 'xlg'
   /**
    * Usage depends on elements structure or scenario.
    * By default it is `submit`.
@@ -23,11 +23,11 @@ interface Props {
    * Callback when button is clicked.
    * It will return `element` as param.
    */
-	onClick?: () => any,
+	onClick?: React.MouseEventHandler<Element>
   /**
    * Inside of an button.
    */
-	children: React.ReactNode,
+	children: React.ReactNode
   /**
    * Makes button unclickable if disabled was enabled. lol.
    * default is `false`.
