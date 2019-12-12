@@ -1,0 +1,86 @@
+.Btn {
+  margin: 0 0.5rem 0.25rem 0;
+  padding: 0 0.5rem;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+  color: var(--black);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--family);
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 2.5rem;
+  justify-content: center;
+  line-height: inherit;
+  min-width: 5rem;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  will-change: filter;
+}
+
+.Btn.xsm,
+.Btn.sm {
+  font-size: 0.75rem;
+  height: 1.5rem;
+}
+
+.Btn.xsm {
+  min-width: 2rem;
+}
+
+.Btn.sm {
+  min-width: 3rem;
+}
+
+.Btn.lg {
+  height: 3rem;
+  min-width: 8rem;
+}
+
+.Btn.xlg {
+  height: 3.5rem;
+  min-width: 10rem;
+}
+
+.Btn.main {
+  color: var(--main-darken);
+  background-color: var(--main);
+  border-color: var(--main-darken);
+}
+
+.Btn.support {
+  color: var(--support-darken);
+  background-color: var(--support);
+  border-color: var(--support-darken);
+}
+
+.Btn.alert {
+  color: var(--disagree-darken);
+  background-color: var(--disagree);
+  border-color: var(--disagree-darken);
+}
+
+.Btn[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.Btn:hover:not(:disabled) {
+  filter: brightness(95%);
+}
+
+.Btn.grow {
+  width: 100%;
+  margin-right: 0;
+}
