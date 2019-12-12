@@ -7,4 +7,4 @@ Simple reset with global hidden attribute style.
 - Uses `--family` and `--family-code` for font family
 - Adding `hidden` attribute on an element will hide it
 - Text area only resizes vertically
-- Set <hr> element to display block
+- Set `<hr>` element to display block

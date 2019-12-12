@@ -1,0 +1,45 @@
+.Heading {
+  font-family: var(--family);
+  margin: 0 0 1rem 0;
+  line-height: 1.32;
+  font-weight: 600;
+}
+
+.Heading.light {
+  font-weight: 300;
+}
+
+.Heading.strong {
+  font-weight: 800;
+}
+
+h1.Heading {
+  font-size: calc(1.625rem + 2vmin);
+}
+
+h2.Heading {
+  font-size: calc(1.375rem + 2vmin);
+}
+
+h3.Heading {
+  font-size: calc(1.125rem + 2vmin);
+}
+
+h4.Heading {
+  font-size: calc(1rem + 2vmin);
+}
+
+h5.Heading {
+  font-size: calc(1rem + 1vmin);
+}
+
+h6.Heading {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 47.875em) {
+  .Heading {
+    line-height: 1.25;
+  }
+}

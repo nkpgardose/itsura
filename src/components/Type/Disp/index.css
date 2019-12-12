@@ -1,0 +1,37 @@
+.Disp {
+  color: var(--black);
+  font-family: var(--family);
+  line-height: 1.2;
+}
+
+.Disp > .title {
+  font-size: calc(2.5rem + 2.5vmin);
+  font-weight: 600;
+  margin: 0 0 .5rem 0;
+}
+
+.Disp > .subtitle {
+  color: var(--darkgray);
+  font-size: calc(1.75rem + 2.5vmin);
+  margin: 0 0 1rem 0;
+}
+
+.Disp.cover {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 75vh;
+  width: 100%;
+}
+
+.Disp.center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 47.875em) {
+  .Disp {
+    line-height: 1.25;
+	}
+}

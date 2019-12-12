@@ -1,0 +1,29 @@
+.Inline {
+  font-family: var(--family);
+}
+
+.Inline.mark {
+  padding: 0.15625rem;
+  background-color: var(--mark);
+  border-radius: 0.125rem;
+}
+
+.Inline.strong {
+  font-weight: 600;
+}
+
+.Inline.em {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.Inline.small {
+  font-size: 0.85em;
+}
+
+.Inline.del,
+.Inline.strikethrough,
+.Inline.insert,
+.Inline.underline {
+  margin: 0 0.3125rem;
+}
