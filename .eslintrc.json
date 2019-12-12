@@ -2,9 +2,10 @@
   "extends": [
     "react-app",
     "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "jsx-a11y"],
+  "plugins": ["react", "jsx-a11y", "prettier"],
   "rules": {
     "quotes": [2, "single", "avoid-escape"],
     "semi": ["error", "never"],
