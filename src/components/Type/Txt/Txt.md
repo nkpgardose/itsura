@@ -20,7 +20,7 @@ Long paragraphs.
 </Txt>
 ```
 
-Copied from [http://plrplr.com/6444/buying-an-atv-trailer](http://plrplr.com/6444/buying-an-atv-trailer)
+Copied from [here](http://plrplr.com/6444/buying-an-atv-trailer)
 
 Inline elements under `Txt`.
 
@@ -35,7 +35,6 @@ Inline elements under `Txt`.
 </Txt>
 ```
 
-Copied from [http://plrplr.com/59532/fly-around-the-world-reviewing-casinos-12
-](http://plrplr.com/59532/fly-around-the-world-reviewing-casinos-12)
+Copied from [here](http://plrplr.com/59532/fly-around-the-world-reviewing-casinos-12)
 
 **NOTE**: If you want styled inline elements to see [Inline](#inline) Component.

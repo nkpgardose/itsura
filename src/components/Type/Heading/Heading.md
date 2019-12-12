@@ -36,4 +36,4 @@ import Txt from '../Txt'
 </div>
 ```
 
-Copied from [http://plrplr.com/88711/having-your-home-business-network-and-building-it-2/](http://plrplr.com/88711/having-your-home-business-network-and-building-it-2/)
+Copied from [here](http://plrplr.com/88711/having-your-home-business-network-and-building-it-2/)
