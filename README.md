@@ -2,7 +2,7 @@
 
 > Itsura means shape, form, or appearance.
 
-:haircut: Set of components made in React and TypeScript
+:haircut: Set of clean React components.
 
 ## :page_with_curl: Getting Started
 
@@ -14,7 +14,7 @@ $ yarn start # start it.
 $ yarn test # test every component with coverage result as well.
 ```
 
-Run components using styleguide.
+Run components using a style guide.
 
 ```sh
 $ yarn start:styleguide
