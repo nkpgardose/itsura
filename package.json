@@ -36,7 +36,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "styleguide:deploy": "gh-pages -d styleguide"
   },
   "browserslist": {
     "production": [
@@ -57,6 +58,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1",
     "react-docgen-typescript": "^1.16.1",
     "react-styleguidist": "^10.3.2",
