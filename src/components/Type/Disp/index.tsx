@@ -8,23 +8,21 @@ interface Props {
    * Main message that will inspire some people
    * or marketing message.
    */
-  title: string | ReactNode
+	title: string | ReactNode
   /**
    * Follow up or more content behind title.
-   * "" by default.
    */
-  subtitle?: string | ReactNode
+	subtitle?: string | ReactNode
   /**
    * Different style modification by passing
    * Heading's variant or Parent's class elements.
-   * "" by default.
    */
-  variants?: string
+	variants?: string
 }
 
 const defaultProps = {
-  subtitle: '',
-  variants: ''
+	subtitle: '',
+	variants: ''
 }
 
 /**
@@ -34,14 +32,14 @@ const defaultProps = {
  * Text here are **HUGE**
  */
 const Disp = ({ title, subtitle, variants }: Props) => {
-  const classNames = `Disp ${variants}`.trim()
+	const classNames = `Disp ${variants}`.trim()
 
-  return (
-    <section className={classNames}>
-      <h1 className="title">{title}</h1>
-      <p className="subtitle">{subtitle}</p>
-    </section>
-  )
+	return (
+		<section className={classNames}>
+			<h1 className="title">{title}</h1>
+			<p className="subtitle">{subtitle}</p>
+		</section>
+	)
 }
 
 Disp.defaultProps = defaultProps

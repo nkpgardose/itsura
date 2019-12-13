@@ -3,46 +3,40 @@ import React, { useState } from 'react'
 import './../../variables.css'
 import './index.css'
 
-interface FieldChange {
+export interface FieldChange {
 	name: string
 	value: string
 }
 
 interface Props {
   /**
-   * Based on input disabled attribute.
-   * It would not accept texts.
-   * `false` by default.
+   * It's based on input disabled attribute.
    */
 	disabled?: boolean
   /**
-   * Styled field in an error state and display
-   * message given properly.
-   * "" by default.
+   * It styles field in an error state and display
+   * message properly.
    */
 	errorMsg?: string
   /**
-   * To indicate the field responsiblity.
+	 * It generates label HTML element.
    */
 	label: string
   /**
-   * Based on input name attribute.
-   * Usually used for getting the
-   * value of the element.
+   * It's based on input name attribute.
+   * Usually used for getting the value of the element.
    */
 	name: string
   /**
-   * Callback every key press
+   * A callback for every key press.
    */
 	onFieldChange: (payload: FieldChange) => any
 	/**
 	 * Additional information supporting label.
-	 * "" by default.
 	 */
 	placeholder?: string
 	/**
-	 * Based on input required attribute.
-	 * `false` by default.
+	 * Based on input required HTML attribute.
 	 */
 	required?: boolean
 	/**
@@ -53,13 +47,11 @@ interface Props {
 	/**
 	 * Based on input value attribute.
 	 * Usually used to set initial value of input.
-	 * "" by default.
 	 */
 	value?: string | number
 	/**
-		* Different style modification by passing
+		* Different style modification by passing.
 		* Field's variant or Parent's class elements.
-		* "" by default.
 		*/
 	variants?: string
 }

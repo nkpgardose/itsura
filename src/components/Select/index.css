@@ -1,0 +1,10 @@
+.Select {
+  width: auto;
+}
+
+.Select > .input {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAQAAAD/5HvMAAAA80lEQVR4Ae3YAQZCQRjE8bnHi7peACQBhQhdq+gUeU/dY0MYlqbC14T5Axj2B9hd1JRSSmmPLf6oIxoaNn/FESQThyQ/x0kSHJLcHD+JHCdJc0aMTlLPmTBgjntPcnIAWEiCYyIpjoG01pwXpCWq4mE9R6xGzIB6EjliRU41SXO4upFTSzoLDlcXLAB/KaWUUkopLXDCgHcNOGP+G86Nl3zBmdBwJ6mW00gSnFZPmj05JGlOPWn50VN66lYrFLb5+rPhCAAGkuIYSIpjIgmOhXR1cdi2A9g47KA5NpLm+Ek7dHlJKzA7iRw/SXBcpCJOSimlB8bHilMv6tr4AAAAAElFTkSuQmCC');
+  background-position: calc(100% - 0.625rem) center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}

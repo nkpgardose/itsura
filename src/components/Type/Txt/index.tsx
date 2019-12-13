@@ -7,13 +7,12 @@ interface Props {
   /**
    * Set of texts or texts with inline elements.
    */
-  children: React.ReactNode
+	children: React.ReactNode
   /**
    * Different style modification by passing
    * Type's variant or Parent's class elements.
-   * "" by default.
    */
-  variants?: string
+	variants?: string
 }
 
 const defaultProps = { variants: '' }
@@ -23,8 +22,8 @@ const defaultProps = { variants: '' }
  * Mostly used for paragraphs.
  */
 const Txt = ({ children, variants }: Props) => {
-  const classNames = `Txt ${variants}`.trim()
-  return <p className={classNames}>{children}</p>
+	const classNames = `Txt ${variants}`.trim()
+	return <p className={classNames}>{children}</p>
 }
 
 Txt.defaultProps = defaultProps
