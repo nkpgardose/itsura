@@ -54,25 +54,16 @@ interface Props {
 	variants?: string,
 }
 
-const defaultProps = {
-	disabled: false,
-	errorMsg: '',
-	label: '',
-	required: false,
-	value: '',
-	variants: '',
-}
-
 function Select({
-	disabled,
-	errorMsg,
-	label,
+	disabled = false,
+	errorMsg = '',
+	label = '',
 	name,
 	onSelectionChange,
 	options,
-	required,
-	value,
-	variants,
+	required = false,
+	value = '',
+	variants = '',
 }: Props) {
 	const [val, setFieldVal] = useState(value)
 	const classNames = `
@@ -117,7 +108,5 @@ function Select({
 		</div>
 	)
 }
-
-Select.defaultProps = defaultProps
 
 export default Select

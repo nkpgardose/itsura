@@ -20,18 +20,17 @@ interface Props {
 	variants?: string
 }
 
-const defaultProps = {
-	subtitle: '',
-	variants: ''
-}
-
 /**
  * Disp is use for expressing some
  * motivational texts or some
  * obvious feature of the app.
  * Text here are **HUGE**
  */
-const Disp = ({ title, subtitle, variants }: Props) => {
+const Disp = ({
+	title,
+	subtitle = '',
+	variants = ''
+}: Props) => {
 	const classNames = `Disp ${variants}`.trim()
 
 	return (
@@ -41,7 +40,5 @@ const Disp = ({ title, subtitle, variants }: Props) => {
 		</section>
 	)
 }
-
-Disp.defaultProps = defaultProps
 
 export default Disp

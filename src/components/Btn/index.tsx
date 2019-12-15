@@ -32,15 +32,14 @@ interface Props {
 	disabled?: boolean
 }
 
-const defaultProps = {
-	disabled: false,
-	type: 'submit',
-	size: '',
-	variants: '',
-	onClick() { }
-}
-
-const Btn = ({ variants, size, children, onClick, disabled, type }: Props) => {
+const Btn = ({
+	children,
+	disabled = false,
+	onClick = () => { },
+	size = '',
+	type = 'submit',
+	variants = '',
+}: Props) => {
 	const classNames = `Btn ${size} ${variants}`.replace(/\s+/g, ' ').trim()
 	return (
 		<button
@@ -52,7 +51,5 @@ const Btn = ({ variants, size, children, onClick, disabled, type }: Props) => {
 		</button>
 	)
 }
-
-Btn.defaultProps = defaultProps
 
 export default Btn
