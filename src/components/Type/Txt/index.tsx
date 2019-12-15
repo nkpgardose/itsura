@@ -15,17 +15,13 @@ interface Props {
 	variants?: string
 }
 
-const defaultProps = { variants: '' }
 
-/**
- * Using project's default font family with set of variants.
- * Mostly used for paragraphs.
- */
-const Txt = ({ children, variants }: Props) => {
+const Txt = ({
+	children,
+	variants = ''
+}: Props) => {
 	const classNames = `Txt ${variants}`.trim()
 	return <p className={classNames}>{children}</p>
 }
-
-Txt.defaultProps = defaultProps
 
 export default Txt

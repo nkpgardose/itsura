@@ -19,17 +19,11 @@ interface Props {
 	variants?: string
 }
 
-const defaultProps = {
-	level: 1,
-	variants: ''
-}
-
-/**
- * Headings are to mark and separate
- * a certain information on a page.
- * Good for SEO purposes.
- */
-const Heading = ({ children, level, variants }: Props) => {
+const Heading = ({
+	children,
+	level = 1,
+	variants = ''
+}: Props) => {
 	const classNames = `Heading ${variants}`.trim()
 	switch (level) {
 		case 2:
@@ -47,7 +41,5 @@ const Heading = ({ children, level, variants }: Props) => {
 			return <h1 className={classNames}>{children}</h1>
 	}
 }
-
-Heading.defaultProps = defaultProps
 
 export default Heading

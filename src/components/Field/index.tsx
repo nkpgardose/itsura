@@ -56,26 +56,17 @@ interface Props {
 	variants?: string
 }
 
-const defaultProps = {
-	disabled: false,
-	errorMsg: '',
-	placeholder: '',
-	required: false,
-	value: '',
-	variants: '',
-}
-
 const Field = ({
-	disabled,
-	errorMsg,
+	disabled = false,
+	errorMsg = "",
 	label,
 	name,
 	onFieldChange,
-	placeholder,
-	required,
+	placeholder = "",
+	required = false,
 	type,
-	value,
-	variants,
+	value = '',
+	variants = '',
 }: Props) => {
 	const [val, setFieldVal] = useState(value)
 	const classNames = `Field ${errorMsg ? 'error' : ''} ${variants}`
@@ -128,7 +119,5 @@ const Field = ({
 		</div>
 	)
 }
-
-Field.defaultProps = defaultProps
 
 export default Field
